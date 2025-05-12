@@ -4,7 +4,6 @@ import future.keywords.if
 import future.keywords.in
 
 opa_abac_api := opa.runtime().env.ABAC_API_URL
-opa_abac_api := "192.168.1.112"
 
 user_attributes(user_id) := value if {
 	url := concat("", [sprintf("http://%v:8081/users?id=", [opa_abac_api]), user_id])
