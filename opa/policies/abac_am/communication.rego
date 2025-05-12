@@ -16,6 +16,7 @@ if_user_exists(user_id) if {
 	value := http.send({"method": "GET", "url": url}).body
 	some user in value
 	user == input.context.identity.user
+        input.context.identity.user = "scott"
 }
 
 table_attributes(catalog_name, schema_name, table_name) := value if {
