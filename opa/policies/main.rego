@@ -15,7 +15,6 @@ import future.keywords.in
 allow if {
 	# abac_am.if_user_exists(input.context.identity.user)
 	admin.allow_admin
-        print ("admin .................")
 	print(input)
 }
 
@@ -23,7 +22,6 @@ allow if {
 # That section handle the policies for the regular user
 allow if {
 	abac_am.if_user_exists(utils.user_id)
-	#access.allow_resource
 }
 
 # ----------------------------------------------
