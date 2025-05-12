@@ -15,6 +15,7 @@ import future.keywords.in
 allow if {
 	# abac_am.if_user_exists(input.context.identity.user)
 	admin.allow_admin
+        print ("admin .................")
 	print(input)
 }
 
