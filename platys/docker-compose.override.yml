@@ -1,0 +1,19 @@
+services:
+  abac-api:
+    image: gschmutz/opa-abac-api:latest
+    container_name: abac-api
+    hostname: abac-api
+    environment:
+      - MONGODB_HOST=mongo-1
+    ports:
+      - "8081:8081"
+
+  opa:
+    environment:
+      - ABAC_API_URL=apac-api
+      - SECRET_KEY=secretkey123
+
+  opal-client:
+    environment:
+      - ABAC_API_URL=apac-api
+      - SECRET_KEY=secretkey123

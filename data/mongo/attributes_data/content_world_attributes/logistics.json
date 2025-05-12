@@ -1,0 +1,9 @@
+{
+    "name": "logistics",
+    "classifications": [
+        "sales",
+        "personnel",
+        "common"
+    ],
+    "filter_key": "nationkey"
+}

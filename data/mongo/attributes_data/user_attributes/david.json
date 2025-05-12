@@ -1,0 +1,27 @@
+{
+    "user_id": "david",
+    "mask": false,
+    "catalogs": [
+        "datalake",
+        "tpch"
+    ],
+    "attributes": [
+        {
+            "content_world": "global",
+            "classification": "common"
+        },
+        {
+            "content_world": "logistics",
+            "classification": "sales",
+            "filter_value": [
+                1,
+                2,
+                4
+            ]
+        },
+        {
+            "content_world": "hr",
+            "classification": "common"
+        }
+    ]
+}

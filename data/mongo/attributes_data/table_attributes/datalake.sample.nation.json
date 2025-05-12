@@ -1,0 +1,35 @@
+{
+    "catalog_name": "datalake",
+    "schema_name": "sample",
+    "table_name": "nation",
+    "attributes": {
+        "content_world": "logistics",
+        "row_filter": false
+    },
+    "columns_dict": {
+        "nationkey":{
+            "column_name": "nationkey",
+            "attributes": {
+                "classification": "common"
+            }
+        },
+        "name": {
+            "column_name": "name",
+            "attributes": {
+                "classification": "common"
+            }
+        },
+        "regionkey": {
+            "column_name": "regionkey",
+            "attributes": {
+                "classification": "common"
+            }
+        },
+        "comment": {
+            "column_name": "comment",
+            "attributes": {
+                "classification": "common"
+            }
+        }
+}
+}

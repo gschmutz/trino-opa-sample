@@ -1,0 +1,68 @@
+{
+    "catalog_name": "datalake",
+    "schema_name": "sample",
+    "table_name": "orders",
+    "attributes": {
+        "content_world": "logistics",
+        "row_filter": true,
+        "row_filter_id": "custkey"
+    },
+    "columns_dict": {
+        "orderkey": {
+            "column_name": "orderkey",
+            "attributes": {
+                "classification": "sales",
+                "mask": "id"
+            }
+        },
+        "custkey": {
+            "column_name": "custkey",
+            "attributes": {
+                "classification": "sales",
+                "mask": "id"
+            }
+        },
+        "orderstatus": {
+            "column_name": "orderstatus",
+            "attributes": {
+                "classification": "orders"
+            }
+        },
+        "totalprice": {
+            "column_name": "totalprice",
+            "attributes": {
+                "classification": "sales"
+            }
+        },
+        "orderdate": {
+            "column_name": "orderdate",
+            "attributes": {
+                "classification": "sales"
+            }
+        },
+        "orderpriority": {
+            "column_name": "orderpriority",
+            "attributes": {
+                "classification": "sales"
+            }
+        },
+        "clerk": {
+            "column_name": "clerk",
+            "attributes": {
+                "classification": "sales"
+            }
+        },
+        "shippriority": {
+            "column_name": "shippriority",
+            "attributes": {
+                "classification": "sales"
+            }
+        },
+        "comment": {
+            "column_name": "comment",
+            "attributes": {
+                "classification": "common"
+            }
+        }
+    }
+}
